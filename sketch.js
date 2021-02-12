@@ -78,6 +78,12 @@ function draw(){
       polygon.display();
       fill(255);
       sling.display();
+      textSize(20);
+      fill(200,100,150);
+      push();
+      noStroke();
+      text("Drag the hexagonal stone and release it , to launch it towards the blocks.",80,80);
+      pop();
 }
 
 function mouseDragged(){
