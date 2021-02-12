@@ -93,3 +93,10 @@ function mouseDragged(){
 function mouseReleased(){
     sling.fly();
 }
+
+function keyPressed(){
+    if (keyCode === 32) {
+        Matter.Body.setPosition(polygon.body,{x : 100, y : 100});
+        sling.attach(polygon.body);
+    }
+}
