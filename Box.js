@@ -12,7 +12,7 @@ class Box{
       this.height = height;
       World.add(world, this.body);
     }
-    display(){
+    async display(){
       if(this.body.speed<5){
         var angle = this.body.angle;
         push();
@@ -26,7 +26,7 @@ class Box{
         push();
 
         this.visibility=this.visibility-10;
-        tint(255,this.visibility);
+        await fill(255,this.visibility);
 
         World.remove(world,this.body);
 
